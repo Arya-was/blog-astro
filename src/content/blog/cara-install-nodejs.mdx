@@ -1,0 +1,59 @@
+---
+title: "Cara Install NodeJS"
+description: "Lorem ipsum dolor sit amet"
+pubDate: "Jul 08 2021"
+heroImage: "/blog-install-nodejs.png"
+---
+
+Hari ini kita akan membahas cara menginstal Node.js di Termux. Node.js adalah platform JavaScript yang kuat yang digunakan untuk mengembangkan berbagai macam aplikasi, dari aplikasi web hingga alat pengembangan. Dengan Termux, kamu bisa mengakses alat dan lingkungan pengembangan di perangkat Androidmu. Mari kita mulai!
+
+### Langkah 1: Buka Termux
+
+Buka aplikasi Termux di perangkat Android kamu. Jika belum menginstalnya, kamu bisa mengunduhnya dari Google Play Store atau dari [Termux](https://github.com/termux/termux-app/releases/tag/v0.118.0)
+
+### Langkah 2: Update dan Upgrade Paket
+
+Sebelum menginstal Node.js, pastikan semua paket di Termux telah diperbarui dengan perintah:
+
+```
+pkg update && pkg upgrade
+```
+
+### Langkah 3: Instalasi Node.js
+
+Sekarang, mari instal Node.js dengan menjalankan perintah berikut:
+
+```
+pkg install nodejs
+```
+
+### Langkah 4: Verifikasi Instalasi
+
+Setelah instalasi selesai, kamu dapat memeriksa apakah Node.js berhasil diinstal dengan menjalankan perintah:
+
+```
+node -v
+```
+
+Ini akan menampilkan versi Node.js yang telah diinstal di Termux.
+
+### Langkah 5: Membuat Proyek Node.js Pertama (Opsional)
+
+Sekarang, mari kita buat proyek Node.js sederhana untuk memastikan semuanya berfungsi. Buatlah file baru dengan teks editor favoritmu, misalnya "app.js", dan tambahkan kode berikut:
+
+```
+//app.js
+console.log("Hello, World!");
+```
+
+Simpan file tersebut, kemudian jalankan dengan perintah:
+
+```
+node index.js
+```
+
+Jika semuanya berjalan dengan baik, kamu akan melihat output "Hello, World!".
+
+## Kesimpulan
+
+Sekarang kamu telah berhasil menginstal Node.js di Termux dan menjalankan proyek Node.js pertamamu! Dari sini, kamu dapat terus mengeksplorasi dan mengembangkan aplikasi yang lebih kompleks menggunakan Node.js di perangkat Androidmu.

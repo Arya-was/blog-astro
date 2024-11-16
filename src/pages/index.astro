@@ -1,0 +1,23 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Selamat datang di Blog Saya❤️!</h1>
+			<p>Halo. Nama Saya Arya Wicaksana,</p>
+			<p>Blog ini adalah tempatnya informasi terbaru seputar teknologi informasi. Dibuat dengan sederhana dan minimalis, kami menghadirkan berita, tutorial, dan ulasan terkini untuk memenuhi kebutuhan informasi Anda.</p>
+			<p>Blog ini didasarkan pada konsep simple dan minimalis, dengan fokus pada kenyamanan membaca dan navigasi yang mudah. Warna yang digunakan dijaga agar tidak terlalu mencolok, memastikan fokus utama tetap pada konten yang disajikan.</p>
+		</main>
+		<Footer />
+	</body>
+</html>
