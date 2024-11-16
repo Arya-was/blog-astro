@@ -1,13 +1,7 @@
-import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
-import vercel from "@astrojs/vercel/serverless";
+import { defineConfig } from 'astro/config';
+import vercel from '@astrojs/vercel/serverless'; // atau '@astrojs/vercel/edge' jika menggunakan Edge Functions
 
-import sitemap from "@astrojs/sitemap";
-
-// https://astro.build/config
 export default defineConfig({
-  output: "server",
+  output: 'server', // Wajib "server" untuk deploy di Vercel
   adapter: vercel(),
-  site: "https://example.com",
-  integrations: [mdx(), sitemap()],
 });
